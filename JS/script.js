@@ -1,11 +1,19 @@
 "use strict";
 
-//const result=confirm('Are you here');
-//console.log(result);
-const arr =[];
+const nomberOfFilms=+prompt('Сколько фильмов Вы уже посмотрели?',''),
+ a=prompt('Один из последних просмотренных фильмов?'),
+ b=prompt('На сколько оцените его?'),
+ c=prompt('Один из последних просмотренных фильмов?'),
+ d=prompt('На сколько оцените его?');
 
-arr[0]=prompt('Quel votr prenome', '');
-arr[1]=prompt('Quel votr nome', '');
-arr[2]=prompt('Quel age', ``);
+const lMovieDB= {
+    count:nomberOfFilms,
+    movies:{},
+    actors:{},
+    genres:{},
+    privat:false
+};
 
-console.log(`${arr} /5`);
+lMovieDB.movies[a]=b;
+lMovieDB.movies[c]=d;
+console.log(lMovieDB.movies);
