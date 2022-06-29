@@ -22,3 +22,18 @@ const lMovieDB= {
  }
  
 console.log(lMovieDB); 
+
+console.log(document.body.childNodes);
+console.log(document.body.firstElementChild);
+
+const arr =[];
+let i=0;
+for( let node of document.body.childNodes){
+    if (node.nodeName =='#text'){
+        continue;
+    }    
+
+    arr[i]= node;
+    i++;
+}
+console.log(arr);
